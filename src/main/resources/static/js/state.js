@@ -1,48 +1,37 @@
+$('document').ready(function() {
 
-$('document').ready(function(){
-
-    $('table #editButton').on('click',function(event){
+    $('.table #editButton').on('click',function(event){
         event.preventDefault();
-
-        var href = $(this).attr('href');
-
+        var href= $(this).attr('href');
         $.get(href, function(state, status){
             $('#idEdit').val(state.id);
-            $('#nameEdit').val(state.name);
+            $('#ddlCountryEdit').val(state.countryid);
             $('#capitalEdit').val(state.capital);
             $('#codeEdit').val(state.code);
+            $('#nameEdit').val(state.name);
             $('#detailsEdit').val(state.details);
-            // $('#nationalityEdit').val(country.nationality);
         });
         $('#editModal').modal();
     });
 
-    $('table #deleteButton').on('click', function(event){
-        event.preventDefault();
-
-        var href= $(this).attr('href');
-
-        $('#confirmDeleteButton').attr('href', href);
-
-        $('#deleteModal').modal();
-    });
-
     $('.table #detailsButton').on('click',function(event) {
-
         event.preventDefault();
-
         var href= $(this).attr('href');
-
         $.get(href, function(state, status){
-
             $('#idDetails').val(state.id);
-            // $('#countryDetails').val(state.countryid);
-            // $('#nameDetails').val(state.name);
-            // $('#detailsDetails').val(state.details);
-            // $('#lastModifiedByDetails').val(state.lastModifiedBy);
+            $('#ddlCountryDetails').val(state.countryid);
+            $('#nameDetails').val(state.name);
+            $('#detailsDetails').val(state.details);
+            $('#lastModifiedByDetails').val(state.lastModifiedBy);
             //$('#lastModifiedDateDetails').val(state.lastModifiedDate.substr(0,19).replace("T", " "));
         });
         $('#detailsModal').modal();
     });
 
+    $('.table #deleteButton').on('click',function(event) {
+        event.preventDefault();
+        var href = $(this).attr('href');
+        $('#deleteModal #delRef').attr('href', href);
+        $('#deleteModal').modal();
+    });
 });

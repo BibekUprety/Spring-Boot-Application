@@ -12,8 +12,6 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
-//@RestController
-//@RequestMapping("/country")
 public class CountryController {
 
     private CountryService countryService;
