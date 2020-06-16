@@ -21,34 +21,34 @@ public class StateController {
     }
 
 
-    @GetMapping("/state")
+    @GetMapping("/states")
     public String getAllState(Model model){
         List<State> stateList = stateService.getAllState();
-        model.addAttribute("state",stateList);
+        model.addAttribute("states",stateList);
         return "state";
 
     }
 
-    @PostMapping("/state/addState")
+    @PostMapping("/states/addState")
     public String addState(State state){
         stateService.addState(state);
-        return "redirect:/state";
+        return "redirect:/states";
     }
-    @RequestMapping("/state/findById")
+    @RequestMapping("/states/findById")
     @ResponseBody
     public Optional<State> findById(Integer id){
         return stateService.getById(id);
     }
 
-    @RequestMapping(value = "/state/update",method ={ RequestMethod.PUT,RequestMethod.GET})
+    @RequestMapping(value = "/states/update",method ={ RequestMethod.PUT,RequestMethod.GET})
     public String update(State state){
         stateService.addState(state);
-        return "redirect:/state";
+        return "redirect:/states";
     }
     @RequestMapping(value = "/state/delete",method = {RequestMethod.DELETE,RequestMethod.GET})
     public String deleteState(int id){
         stateService.deleteState(id);
-        return "redirect:/state";
+        return "redirect:/states";
     }
 
 

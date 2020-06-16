@@ -21,18 +21,18 @@ public class CountryController {
         this.countryService = countryService;
     }
 
-    @GetMapping("/country")
+    @GetMapping("/countries")
     public String getCountries(Model model) {
 
         List<Country> countryList = countryService.getCountry();
-        model.addAttribute("country", countryList);
+        model.addAttribute("countries", countryList);
         return "country";
     }
 
     @PostMapping("country/addCountry")
     public String addCountry(Country country){
         countryService.addCountry(country);
-        return "redirect:/country";
+        return "redirect:/countries";
     }
     @RequestMapping("country/findById")
     @ResponseBody
@@ -43,12 +43,12 @@ public class CountryController {
     @RequestMapping(value="/country/update", method= {RequestMethod.PUT, RequestMethod.GET})
     public String update(Country country) {
         countryService.addCountry(country);
-        return "redirect:/country";
+        return "redirect:/countries";
     }
 
     @RequestMapping(value="/country/delete", method= {RequestMethod.DELETE, RequestMethod.GET})
     public String delete(Integer id) {
         countryService.delete(id);
-        return "redirect:/country";
+        return "redirect:/countries";
     }
 }
