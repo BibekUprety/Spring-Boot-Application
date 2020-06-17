@@ -15,6 +15,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Data
@@ -26,7 +27,8 @@ public class Invoice {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	
+
+	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date invoiceDate;
 	
 	@ManyToOne

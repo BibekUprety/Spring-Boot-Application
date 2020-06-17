@@ -34,16 +34,16 @@ public @Data class Client {
 	private String mobile;
 	private String website;
 	private String email;
-	
-//	@ManyToOne
-//	@JoinColumn(name="countryid", insertable=false, updatable=false)
-//	private package com.bibekupreti.myapp.Models country;
-//	private Integer countryid;
-//
-//	@ManyToOne
-//	@JoinColumn(name="stateid", insertable=false, updatable=false)
-//	private com.kindsonthegenius.fleetms.models.State state;
-//	private Integer stateid;
-//
+	@ManyToOne
+	@JoinColumn(name="countryid", insertable=false, updatable=false)
+	private Country country;
+	private Integer countryid;
+
+	@ManyToOne
+	@JoinColumn(name="stateid", insertable=false, updatable=false)
+	private State state;
+	private Integer stateid;
+
 	private String details;
+
 }
