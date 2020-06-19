@@ -9,25 +9,25 @@
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
   <link rel="shortcut icon" href="img/favicon.png">
 
-  <title>Charts | Creative - Bootstrap 3 Responsive Admin Template</title>
+  <title>Blank | Creative - Bootstrap 3 Responsive Admin Template</title>
 
   <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
   <!-- bootstrap theme -->
-  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link href="../../static/css/bootstrap-theme.css" rel="stylesheet">
   <!--external css-->
   <!-- font icon -->
-  <link href="css/elegant-icons-style.css" rel="stylesheet" />
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../../static/css/elegant-icons-style.css" rel="stylesheet" />
+  <link href="../../static/css/font-awesome.min.css" rel="stylesheet" />
   <!-- Custom styles -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet" />
+  <link href="../../static/css/style.css" rel="stylesheet">
+  <link href="../../static/css/style-responsive.css" rel="stylesheet" />
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
   <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-      <script src="js/lte-ie7.js"></script>
+    <script src="../../static/js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="../../static/js/lte-ie7.js"></script>
     <![endif]-->
 
     <!-- =======================================================
@@ -43,13 +43,13 @@
   <section id="container" class="">
     <!--header start-->
 
-    <<header class="header dark-bg">
+    <header class="header dark-bg">
       <div class="toggle-nav">
         <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
       </div>
 
       <!--logo start-->
-      <a href="index.html" class="logo">Nice <span class="lite">Admin</span></a>
+      <a href="../index.html" class="logo">Nice <span class="lite">Admin</span></a>
       <!--logo end-->
 
       <div class="nav search-row" id="top_menu">
@@ -166,7 +166,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="../../static/img/avatar-mini.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Greg  Martin</span>
                                     <span class="time">1 min</span>
@@ -178,7 +178,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="../../static/img/avatar-mini2.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Bob   Mckenzie</span>
                                     <span class="time">5 mins</span>
@@ -190,7 +190,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="../../static/img/avatar-mini3.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Phillip   Park</span>
                                     <span class="time">2 hrs</span>
@@ -202,7 +202,7 @@
               </li>
               <li>
                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="../../static/img/avatar-mini4.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Ray   Munoz</span>
                                     <span class="time">1 day</span>
@@ -268,7 +268,7 @@
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="" src="img/avatar1_small.jpg">
+                                <img alt="" src="../../static/img/avatar1_small.jpg">
                             </span>
                             <span class="username">Jenifer Smith</span>
                             <b class="caret"></b>
@@ -288,7 +288,7 @@
                 <a href="#"><i class="icon_chat_alt"></i> Chats</a>
               </li>
               <li>
-                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                <a href="../login.html"><i class="icon_key_alt"></i> Log Out</a>
               </li>
               <li>
                 <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
@@ -302,196 +302,168 @@
         </ul>
         <!-- notificatoin dropdown end-->
       </div>
-      </header>
-      <!--header end-->
+    </header>
+    <!--header end-->
+
 
       <!--sidebar start-->
       <aside>
-        <div id="sidebar" class="nav-collapse ">
-          <!-- sidebar menu start-->
-          <ul class="sidebar-menu">
-            <li class="active">
-              <a class="" href="index.html">
+          <div id="sidebar" class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">
+                  <li class="active">
+                      <a class="" th:href="@{/index}">
                           <i class="icon_house_alt"></i>
                           <span>Dashboard</span>
                       </a>
-            </li>
-            <li class="sub-menu">
-              <a href="javascript:;" class="">
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
                           <i class="icon_document_alt"></i>
-                          <span>Forms</span>
+                          <span>Vehicles</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
-              <ul class="sub">
-                <li><a class="" href="form_component.html">Form Elements</a></li>
-                <li><a class="" href="form_validation.html">Form Validation</a></li>
-              </ul>
-            </li>
-            <li class="sub-menu">
-              <a href="javascript:;" class="">
+                      <ul class="sub">
+                          <li><a class="" th:href="@{/vehicles}">Vehicle Data</a></li>
+                          <li><a class="" th:href="@{/vehicleMaintenances}">Maintenance</a></li>
+                          <li><a class="" th:href="@{/vehicleMovements}">Movements</a></li>
+                          <li><a class="" th:href="@{/vehicleHires}">Hires</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
                           <i class="icon_desktop"></i>
-                          <span>UI Fitures</span>
+                          <span>Parameters</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
-              <ul class="sub">
-                <li><a class="" href="general.html">Components</a></li>
-                <li><a class="" href="buttons.html">Buttons</a></li>
-                <li><a class="" href="grids.html">Grids</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="" href="widgets.html">
-                          <i class="icon_genius"></i>
-                          <span>Widgets</span>
-                      </a>
-            </li>
-            <li>
-              <a class="" href="chart-chartjs.html">
-                          <i class="icon_piechart"></i>
-                          <span>Charts</span>
-
-                      </a>
-
-            </li>
-
-            <li class="sub-menu">
-              <a href="javascript:;" class="">
-                          <i class="icon_table"></i>
-                          <span>Tables</span>
+                      <ul class="sub">
+                          <li><a class="" th:href="@{/vehicleMakes}">Vehicle Make</a></li>
+                          <li><a class="" th:href="@{/vehicleTypes}">Vehicle Types</a></li>
+                          <li><a class="" th:href="@{/vehicleModels}">Vehicle Models</a></li>
+                          <li><a class="" th:href="@{/vehicleStatuses}">Status Values</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_desktop"></i>
+                          <span>People</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
-              <ul class="sub">
-                <li><a class="" href="basic_table.html">Basic Table</a></li>
-              </ul>
-            </li>
+                      <ul class="sub">
+                          <li><a class="" th:href="@{/employees}">Employees</a></li>
+                          <li><a class="" th:href="@{/clients}">Clients</a></li>
+                          <li><a class="" th:href="@{/suppliers}">Suppliers</a></li>
+                          <li><a class="" th:href="@{/contacts}">Contacts</a></li>
+                          <li><a class="" th:href="@{/users}">User</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_desktop"></i>
+                          <span>HR Settings</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" th:href="@{/jobTitles}">Job Titles</a></li>
+                          <li><a class="" th:href="@{/employeeTypes}">Employee Types</a></li>
+                      </ul>
+                  </li>
 
-            <li class="sub-menu">
-              <a href="javascript:;" class="">
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_desktop"></i>
+                          <span>Accounts</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" th:href="@{/invoices}">Invoices</a></li>
+                          <li><a class="" th:href="@{/invoiceStatuses}">Invoice Status Values</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
                           <i class="icon_documents_alt"></i>
-                          <span>Pages</span>
+                          <span>Globals</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
-              <ul class="sub">
-                <li><a class="" href="profile.html">Profile</a></li>
-                <li><a class="" href="login.html"><span>Login Page</span></a></li>
-                <li><a class="" href="assest/contact.html"><span>Contact Page</span></a></li>
-                <li><a class="" href="blank.html">Blank Page</a></li>
-                <li><a class="" href="404.html">404 Error</a></li>
-              </ul>
-            </li>
+                      <ul class="sub">
+                          <li><a class="" th:href="@{/countries}">Countries</a></li>
+                          <li><a class="" th:href="@{/states}"><span>States</span></a></li>
+                          <li><a class="" th:href="@{/locations}"><span>Locations</span></a></li>
 
-          </ul>
-          <!-- sidebar menu end-->
-        </div>
+                      </ul>
+                  </li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
       </aside>
       <!--sidebar end-->
 
-      <!--main content start-->
-      <section id="main-content">
-        <section class="wrapper">
-          <div class="row">
-            <div class="col-lg-12">
-              <h3 class="page-header"><i class="icon_piechart"></i> Chart</h3>
-              <ol class="breadcrumb">
-                <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-                <li><i class="icon_piechart"></i>Chart</li>
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="page-header"><i class="fa fa fa-bars"></i> Pages</h3>
+            <ol class="breadcrumb">
+              <li><i class="fa fa-home"></i><a href="../index.html">Home</a></li>
+              <li><i class="fa fa-bars"></i>Pages</li>
+              <li><i class="fa fa-square-o"></i>Pages</li>
+            </ol>
+          </div>
+        </div>
+        <!-- page start-->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="recent">
+              <h3>Send us a message</h3>
+            </div>
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
 
-              </ol>
+              <div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Send Message</button></div>
+            </form>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="recent">
+              <h3>Get in touch with us</h3>
+            </div>
+            <div class="">
+              <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>
+              <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>
+
+              <h4>Address:</h4>Little Lonsdale St, New York<br>
+              <h4>Telephone:</h4>345 578 59 45 416</br>
+              <h4>Fax:</h4>123 456 789
             </div>
           </div>
-          <div class="row">
-            <!-- chart morris start -->
-            <div class="col-lg-12">
-              <section class="panel">
-                <header class="panel-heading">
-                  <h3>General Chart</Char>
-                      </header>
-                      <div class="panel-body">
-                        <div class="tab-pane" id="chartjs">
-                      <div class="row">
-                          <!-- Line -->
-                          <div class="col-lg-6">
-                              <section class="panel">
-                                  <header class="panel-heading">
-                                      Line
-                                  </header>
-                                  <div class="panel-body text-center">
-                                      <canvas id="line" height="300" width="450"></canvas>
-                                  </div>
-                              </section>
-                          </div>
-                          <!-- Bar -->
-                          <div class="col-lg-6">
-                              <section class="panel">
-                                  <header class="panel-heading">
-                                      Bar
-                                  </header>
-                                  <div class="panel-body text-center">
-                                      <canvas id="bar" height="300" width="500"></canvas>
-                                  </div>
-                              </section>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <!-- Radar -->
-                          <div class="col-lg-6">
-                              <section class="panel">
-                                  <header class="panel-heading">
-                                      Radar
-                                  </header>
-                                  <div class="panel-body text-center">
-                                      <canvas id="radar" height="300" width="400"></canvas>
-                                  </div>
-                              </section>
-                          </div>
-                          <!-- Polar Area -->
-                          <div class="col-lg-6">
-                              <section class="panel">
-                                  <header class="panel-heading">
-                                      Polar Area
-                                  </header>
-                                  <div class="panel-body text-center">
-                                      <canvas id="polarArea" height="300" width="400"></canvas>
-                                  </div>
-                              </section>
-                          </div>
-                      </div>
-                      <div class="row">
-
-                          <!-- Pie -->
-                          <div class="col-lg-6">
-                              <section class="panel">
-                                  <header class="panel-heading">
-                                      Pie
-                                  </header>
-                                  <div class="panel-body text-center">
-                                      <canvas id="pie" height="300" width="400"></canvas>
-                                  </div>
-                              </section>
-                          </div>
-                          <!-- Doughnut -->
-                          <div class="col-lg-6">
-                              <section class="panel">
-                                  <header class="panel-heading">
-                                      Doughnut
-                                  </header>
-                                  <div class="panel-body text-center">
-                                      <canvas id="doughnut" height="300" width="400"></canvas>
-                                  </div>
-                              </section>
-                          </div>
-                      </div>
-                  </div>
-                      </div>
-                      </div>
-                    </section>
-              </div>
-              <!-- chart morris start -->
-            </div>
+        </div>
+        <!-- page end-->
       </section>
-      <!--main content end-->
-      <div class="text-right">
-            <div class="credits">
+    </section>
+    <!--main content end-->
+    <div class="text-right">
+      <div class="credits">
           <!--
             All the links in the footer should remain intact.
             You can delete the links only if you purchased the pro version.
@@ -500,22 +472,20 @@
           -->
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
-        </div>
-    </section>
-    <!-- container section end -->
-    <!-- javascripts -->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- nice scroll -->
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-    <!-- chartjs -->
-    <script src="assets/chart-master/Chart.js"></script>
-    <!-- custom chart script for this page only-->
-    <script src="js/chartjs-custom.js"></script>
-    <!--custome script for all page-->
-    <script src="js/scripts.js"></script>
+    </div>
+  </section>
+  <!-- container section end -->
+  <!-- javascripts -->
+  <script src="../../static/js/jquery.js"></script>
+  <script src="../../static/js/bootstrap.min.js"></script>
+  <!-- nice scroll -->
+  <script src="../../static/js/jquery.scrollTo.min.js"></script>
+  <script src="../../static/js/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--custome script for all page-->
+  <script src="../../static/js/scripts.js"></script>
+  <script src="../../static/contactform/contactform.js"></script>
 
-  </body>
+
+</body>
+
 </html>
